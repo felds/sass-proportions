@@ -1,0 +1,11 @@
+@mixin positionize($pos) {
+  position: absolute;
+  @if $pos == all {
+    $pos: top right bottom left;
+  }
+
+  @if index($pos, top) { top: 0 }
+  @if index($pos, right) { right: 0 }
+  @if index($pos, bottom) { bottom: 0 }
+  @if index($pos, left) { left: 0 }
+}

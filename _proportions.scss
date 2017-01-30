@@ -1,3 +1,5 @@
+@import "positions";
+
 @mixin proportion($x: 1, $y: 1, $child-selector: 'div') {
   display: block;
   position: relative;
