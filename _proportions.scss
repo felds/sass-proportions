@@ -1,0 +1,9 @@
+@mixin proportion($x: 1, $y: 1, $child-selector: 'div') {
+  display: block;
+  position: relative;
+  padding-top: #{100% * $y / $x};
+
+  > #{$child-selector} {
+    @include positionize(all);
+  }
+}
